@@ -1,0 +1,23 @@
+body{
+
+font-family:Arial;
+
+margin:50px;
+
+}
+
+input{
+
+width:250px;
+
+padding:8px;
+
+margin:5px;
+
+}
+
+button{
+
+padding:10px 20px;
+
+}
