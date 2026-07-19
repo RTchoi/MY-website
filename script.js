@@ -15,7 +15,7 @@ function(){
     .value;
 
     fetch(
-        "http://localhost:5000/signup",
+        "https://f8a4-2001-e68-541b-f269-dd22-2220-2c05-ee8a.ngrok-free.app/signup",
         {
 
             method:"POST",
