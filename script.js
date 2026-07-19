@@ -45,3 +45,26 @@ document
     });
 
 });
+function openSignup(){
+
+document.getElementById("signupBox").style.display="block";
+
+}
+
+
+
+function openLogin(){
+
+document.getElementById("loginBox").style.display="block";
+
+}
+
+
+
+function closeBox(){
+
+document.getElementById("signupBox").style.display="none";
+
+document.getElementById("loginBox").style.display="none";
+
+}
