@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <meta charset="UTF-8">
 
-<title>My Website</title>
+<title>My Platform</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,27 +17,31 @@
 
 <header>
 
-<h1>My Service</h1>
+<div class="logo">
+MyPlatform
+</div>
 
 
 <nav>
 
-<a href="#">Home</a>
-
-<a href="#">서비스</a>
-
-<a href="#">소개</a>
-
-<a href="#">문의</a>
+<a href="#">Product</a>
+<a href="#">Features</a>
+<a href="#">Docs</a>
+<a href="#">About</a>
 
 </nav>
 
 
-<div class="top-button">
+<div>
 
-<button onclick="openLogin()">로그인</button>
+<button class="login-btn" onclick="openLogin()">
+Login
+</button>
 
-<button onclick="openSignup()">회원가입</button>
+
+<button class="signup-btn" onclick="openSignup()">
+Sign Up
+</button>
 
 </div>
 
@@ -46,14 +51,102 @@
 
 
 
-<section class="main">
+
+<section class="hero">
 
 
-<h2>Welcome</h2>
+<div class="hero-text">
+
+
+<h1>
+Build your own
+<br>
+digital platform
+</h1>
+
 
 <p>
-새로운 서비스를 시작하세요.
+Create services, connect users,
+and manage your data easily.
 </p>
+
+
+<div class="hero-button">
+
+
+<button class="main-btn" onclick="openSignup()">
+Get Started
+</button>
+
+
+<button class="outline-btn">
+Learn More
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="dashboard">
+
+
+<div class="box">
+
+<h3>Backend</h3>
+
+<p>
+Flask Server
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>Database</h3>
+
+<p>
+MySQL
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<h3>Users</h3>
+
+<p>
+Management
+</p>
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section class="features">
+
+
+<h2>
+Features
+</h2>
 
 
 <div class="cards">
@@ -61,10 +154,12 @@
 
 <div class="card">
 
-<h3>서비스 1</h3>
+<h3>
+Fast
+</h3>
 
 <p>
-첫 번째 기능입니다.
+Simple and lightweight system.
 </p>
 
 </div>
@@ -73,10 +168,12 @@
 
 <div class="card">
 
-<h3>서비스 2</h3>
+<h3>
+Secure
+</h3>
 
 <p>
-두 번째 기능입니다.
+User authentication system.
 </p>
 
 </div>
@@ -85,14 +182,15 @@
 
 <div class="card">
 
-<h3>서비스 3</h3>
+<h3>
+Scalable
+</h3>
 
 <p>
-세 번째 기능입니다.
+Ready for future expansion.
 </p>
 
 </div>
-
 
 
 </div>
@@ -104,28 +202,35 @@
 
 
 
-<!-- 회원가입 창 -->
 
+
+<!-- 회원가입 -->
 
 <div id="signupBox" class="popup">
 
 
-<h2>회원가입</h2>
+<h2>
+Create Account
+</h2>
 
 
-<input id="username" placeholder="아이디">
+<input id="username"
+placeholder="Username">
 
 
-<input id="password" type="password" placeholder="비밀번호">
+<input id="password"
+type="password"
+placeholder="Password">
+
 
 
 <button onclick="signup()">
-가입하기
+Create Account
 </button>
 
 
 <button onclick="closeBox()">
-닫기
+Close
 </button>
 
 
@@ -135,32 +240,38 @@
 
 
 
-<!-- 로그인 창 -->
 
+
+<!-- 로그인 -->
 
 <div id="loginBox" class="popup">
 
 
-<h2>로그인</h2>
+<h2>
+Login
+</h2>
 
 
-<input placeholder="아이디">
+<input placeholder="Username">
 
 
-<input type="password" placeholder="비밀번호">
+<input type="password"
+placeholder="Password">
+
 
 
 <button>
-로그인
+Login
 </button>
 
 
 <button onclick="closeBox()">
-닫기
+Close
 </button>
 
 
 </div>
+
 
 
 
@@ -169,5 +280,6 @@
 
 
 </body>
+
 
 </html>
