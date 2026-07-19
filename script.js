@@ -1,53 +1,47 @@
 document
 .getElementById("signupButton")
-.addEventListener(
-"click",
-function(){
+.addEventListener("click", function () {
 
-    let username =
-    document
-    .getElementById("username")
-    .value;
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
 
-    let password =
-    document
-    .getElementById("password")
-    .value;
+    fetch("https://f8a4-2001-e68-541b-f269-dd22-2220-2c05-ee8a.ngrok-free.app/signup", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username: username,
+            password: password
+        })
+    })
 
-    fetch(
-        "https://f8a4-2001-e68-541b-f269-dd22-2220-2c05-ee8a.ngrok-free.app/signup",
-        {
+    .then(response => response.json())
 
-            method:"POST",
+    .then(data => {
 
-            headers:{
-                "Content-Type":"application/json"
-            },
+        if (data.success) {
 
-            body:JSON.stringify({
+            alert("회원가입이 완료되었습니다.");
 
-                username:username,
+            // 입력창 비우기
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
 
-                password:password
-
-            })
-
-        }
-
-    )
-
-    .then(
-        response=>response.json()
-    )
-
-    .then(
-        data=>{
+        } else {
 
             alert(data.message);
 
         }
 
-    );
+    })
 
-}
-);
+    .catch(error => {
+
+        alert("서버와 연결할 수 없습니다.");
+
+        console.log(error);
+
+    });
+
+});
