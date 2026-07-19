@@ -5,7 +5,7 @@ document
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    fetch("https://f8a4-2001-e68-541b-f269-dd22-2220-2c05-ee8a.ngrok-free.app/signup", {
+    fetch("https://9c33-2001-e68-541b-f269-dd22-2220-2c05-ee8a.ngrok-free.app/signup", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
