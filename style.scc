@@ -1,23 +1,120 @@
-body{
+body {
 
-font-family:Arial;
+    margin:0;
 
-margin:50px;
-
-}
-
-input{
-
-width:250px;
-
-padding:8px;
-
-margin:5px;
+    font-family: Arial;
 
 }
 
-button{
 
-padding:10px 20px;
+header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:#222;
+
+    color:white;
+
+}
+
+
+
+nav a {
+
+    color:white;
+
+    margin:15px;
+
+    text-decoration:none;
+
+}
+
+
+
+button {
+
+    padding:10px 20px;
+
+    cursor:pointer;
+
+}
+
+
+
+.main {
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+
+
+.cards {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.card {
+
+    width:200px;
+
+    padding:20px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+.popup {
+
+    display:none;
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:white;
+
+    padding:30px;
+
+    border:1px solid black;
+
+    border-radius:10px;
+
+}
+
+
+
+.popup input {
+
+    display:block;
+
+    margin:10px;
+
+    padding:10px;
 
 }
