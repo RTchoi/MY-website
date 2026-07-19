@@ -499,7 +499,48 @@ button {
 
     color:white;
 
+.page{
 
+padding:100px;
+
+text-align:center;
+
+}
+
+
+.page h1{
+
+font-size:60px;
+
+margin-bottom:40px;
+
+}
+
+
+.page p{
+
+font-size:20px;
+
+color:#aaa;
+
+}
+
+
+.card{
+
+margin:30px auto;
+
+max-width:500px;
+
+padding:30px;
+
+background:rgba(255,255,255,0.05);
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,0.1);
+
+}
     border-radius:8px;
 
 
